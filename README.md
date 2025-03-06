@@ -20,6 +20,25 @@ nvm list
 ```
 nvm use 20.11.1
 ```
-    
 
+### Create an Angular project
+- Go to a folder
+- Create a package.json file with the following content
+  ```
+  {
+    "name": "UI",
+    "version": "1.0.0",
+    "scripts": {
+      "ng": "ng"
+    }
+  }
+  ```
+- Execute the following command to install the latest Angular CLI
+  ```
+  npm install --save @angular/cli
+  ```
+  -Execute the following command to create an Angular project with the "microui" project name.
+  ```
+  npm run ng new microui
+  ```
 
