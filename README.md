@@ -37,7 +37,7 @@ nvm use 20.11.1
   ```
   npm install --save @angular/cli
   ```
-  -Execute the following command to create an Angular project with the "microui" project name.
+- Execute the following command to create an Angular project with the "microui" project name.
   ```
   npm run ng new microui
   ```
