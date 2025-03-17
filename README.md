@@ -37,8 +37,8 @@ nvm use 20.11.1
   ```
   npm install --save @angular/cli
   ```
-  ## Create an Angular workspace for re-usable libraries which are used by micro modules
-  - Execute the following command to the workspace
+ #### Create an Angular workspace for re-usable libraries which are used by micro modules
+ - Execute the following command to the workspace
     ```
     npm run ng new microuiWorkspace --create-application="false"
     ```
@@ -53,7 +53,7 @@ nvm use 20.11.1
     npm run ng generate application product --routing
     ```
 
-  ## Install Webpack CLI
+  #### Install Webpack CLI
   - Execute the following command to install Webpack CLI
     ```
     npm install webpack webpack-cli --save-dev
