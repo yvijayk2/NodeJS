@@ -58,6 +58,12 @@ nvm use 20.11.1
     ```
     npm install webpack webpack-cli --save-dev
     ```
+  #### Now add the micro application to Angular module federation to run the application as independent projects
+  - Execute the following command to add the application to Angular module federation
+    ```
+    npm run ng add @angular-architects/module-federation --project order --port 4201
+    npm run ng add @angular-architects/module-federation --project product --port 4202
+    ```
 
 
 
