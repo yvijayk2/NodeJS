@@ -37,8 +37,28 @@ nvm use 20.11.1
   ```
   npm install --save @angular/cli
   ```
-- Execute the following command to create an Angular project with the "microui" project name.
-  ```
-  npm run ng new microui
-  ```
+  ## Create an Angular workspace for re-usable libraries which are used by micro modules
+  - Execute the following command to the workspace
+    ```
+    npm run ng new microuiWorkspace --create-application="false"
+    ```
+    or
+    ```
+    npm run ng new microuiWorkspace --no-create-application
+    ```
+ - Execute the following command to create a micro application (order and product) in the microuiWorkspace workspace
+    ```
+    cd microuiWorkspace
+    npm run ng generate application order --routing
+    npm run ng generate application product --routing
+    ```
+
+  ## Install Webpack CLI
+  - Execute the following command to install Webpack CLI
+    ```
+    npm install webpack webpack-cli --save-dev
+    ```
+
+
+
 
