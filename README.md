@@ -1,5 +1,6 @@
 # User guide to use NodeJS to create an Angular project
 
+## NVM to manage Node versions
 Use the NVM (Node Version Manager) to manage NodeJS versions.\
 Follow the steps given in the following link to set up NVM:\
 https://github.com/nvm-sh/nvm
@@ -21,7 +22,7 @@ nvm list
 nvm use 20.11.1
 ```
 
-### Create an Angular project
+### Create an Angular project using NPM
 - Go to a folder
 - Create a package.json file with the following content
   ```
@@ -65,6 +66,21 @@ nvm use 20.11.1
     npm run ng add @angular-architects/module-federation --project product --port 4202
     ```
 
+### Create an Angular project using NX and PNPM
+- Install PNPM following the steps given below if PNPM is not
+- - Install PNPM on Windows via powershell
+    ```
+    Invoke-WebRequest https://get.pnpm.io/install.ps1 -UseBasicParsing | Invoke-Expression
+    ```
+- - Install PNPM on Unix
+    ```
+    curl -fsSL https://get.pnpm.io/install.sh | sh -
+    ```
 
+- Execute the following command to create an Angular workspace
+  ```
+  npx create-nx-workspace@latest angularMicroUiWorkspace --package-manager=pnpm
+  npx @angular/cli@19.2.1 new angularMicroUiWorkspace --no-create-application --package-manager=pnpm
+  ```
 
 
