@@ -76,11 +76,17 @@ nvm use 20.11.1
     ```
     curl -fsSL https://get.pnpm.io/install.sh | sh -
     ```
+- - Install PNPM using NPM
+    ```
+    npm install -g pnpm
+    ```
 
-- Execute the following command to create an Angular workspace
+- Execute the following command to create an Angular workspace.\
+  Refer to Angular and NX version matrix to use proper NX version to install required Angular CLI
   ```
   npx create-nx-workspace@latest angularMicroUiWorkspace --package-manager=pnpm
-  npx @angular/cli@19.2.1 new angularMicroUiWorkspace --no-create-application --package-manager=pnpm
+  npx @angular/cli@<version> new angularMicroUiWorkspace --no-create-application --package-manager=pnpm
   ```
-
+- - - Angular and NX version matrix
+  https://nx.dev/nx-api/angular/documents/angular-nx-version-matrix
 
