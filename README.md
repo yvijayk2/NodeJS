@@ -24,11 +24,11 @@ nvm use 20.11.1
 
 ### Create an Angular project using NPM
 - Go to a folder
-- Execute the following command to create Angular workspace. Replace <version> with Angular CLI version.
+- Execute the following command to create an Angular workspace. Replace <version> with Angular CLI version.
   ```
   npx @angular/cli@<version> new angularMicroUiWorkspace --no-create-application
   ```
-- Execute the following command to create Angular workspace with PNPM package manager instead of NPM
+- Execute the following command to create an Angular workspace with a PNPM package manager instead of an NPM
   ```
   npx @angular/cli@<version> new angularMicroUiWorkspace --no-create-application --package-manager=pnpm
   ```
@@ -63,7 +63,7 @@ nvm use 20.11.1
 
 ### Create an Angular project using NX and PNPM
 - Install PNPM following the steps given below if PNPM is not
-- - Install PNPM on Windows via powershell
+- - Install PNPM on Windows via PowerShell
     ```
     Invoke-WebRequest https://get.pnpm.io/install.ps1 -UseBasicParsing | Invoke-Expression
     ```
@@ -76,11 +76,22 @@ nvm use 20.11.1
     npm install -g pnpm
     ```
 
-- Execute the following command to create an Angular workspace.\
-  Refer to Angular and NX version matrix to use proper NX version to install required Angular CLI
+- Execute the following command to create an NX Angular workspace using PNPM.\
+  ```
+  pnpx create-nx-workspace@<version> angularMicroUiWorkspace
+  ```
+  or use the following NPM command to create NX Angular
   ```
   npx create-nx-workspace@<version> angularMicroUiWorkspace --package-manager=pnpm
   ```
+- - Refer to the Angular and NX version matrix to use the proper NX version to install the required Angular CLI
 - - - Angular and NX version matrix
   https://nx.dev/nx-api/angular/documents/angular-nx-version-matrix
+
+- Execute the following command to start the project
+  ```
+  pnpm start
+  ```
+### 
+
 
