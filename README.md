@@ -22,7 +22,7 @@ nvm list
 nvm use 20.11.1
 ```
 
-### Create an Angular project using NPM
+### Create an Angular workspace using NPM
 - Go to a folder
 - Execute the following command to create an Angular workspace. Replace <version> with Angular CLI version.
   ```
@@ -32,8 +32,12 @@ nvm use 20.11.1
   ```
   npx @angular/cli@<version> new angularMicroUiWorkspace --no-create-application --package-manager=pnpm
   ```
+  or
+  ```
+  pnpx @angular/cli@<version> new angularMicroUiWorkspace --no-create-application
+  ```
   
- #### Create an Angular workspace for re-usable libraries which are used by micro modules
+ ### Create an Angular workspace for re-usable libraries which are used by micro modules
  - Execute the following command to the workspace
     ```
     npm run ng new microuiWorkspace --create-application="false"
@@ -93,6 +97,7 @@ nvm use 20.11.1
   pnpm start
   ```
 ### Add PNPM and NX to existing NPM Angular project
+#### Converting NPM project to PNPM project
 Go to the project folder
 - Remove node_modules folder
 - [Optional] Create pnpm-workspace.yaml if you use workspaces
@@ -105,5 +110,15 @@ Go to the project folder
   ```
   pnpm install
   ```
+#### Add NX to project
+- Execute the following command to add NX
+  ```
+  pnpx nx@latest init
+  ```
+- Execute following command to start the project
+  ```
+  pnpx nx start
+  ```
+
 
 
