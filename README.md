@@ -24,20 +24,15 @@ nvm use 20.11.1
 
 ### Create an Angular project using NPM
 - Go to a folder
-- Create a package.json file with the following content
+- Execute the following command to create Angular workspace. Replace <version> with Angular CLI version.
   ```
-  {
-    "name": "UI",
-    "version": "1.0.0",
-    "scripts": {
-      "ng": "ng"
-    }
-  }
+  npx @angular/cli@<version> new angularMicroUiWorkspace --no-create-application
   ```
-- Execute the following command to install the latest Angular CLI
+- Execute the following command to create Angular workspace with PNPM package manager instead of NPM
   ```
-  npm install --save @angular/cli
+  npx @angular/cli@<version> new angularMicroUiWorkspace --no-create-application --package-manager=pnpm
   ```
+  
  #### Create an Angular workspace for re-usable libraries which are used by micro modules
  - Execute the following command to the workspace
     ```
@@ -84,8 +79,7 @@ nvm use 20.11.1
 - Execute the following command to create an Angular workspace.\
   Refer to Angular and NX version matrix to use proper NX version to install required Angular CLI
   ```
-  npx create-nx-workspace@latest angularMicroUiWorkspace --package-manager=pnpm
-  npx @angular/cli@<version> new angularMicroUiWorkspace --no-create-application --package-manager=pnpm
+  npx create-nx-workspace@<version> angularMicroUiWorkspace --package-manager=pnpm
   ```
 - - - Angular and NX version matrix
   https://nx.dev/nx-api/angular/documents/angular-nx-version-matrix
