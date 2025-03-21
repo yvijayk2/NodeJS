@@ -117,7 +117,7 @@ Go to the project folder
   ```
 - Execute following command to start the project
   ```
-  pnpx nx start
+  pnpx nx serve
   ```
 
 
