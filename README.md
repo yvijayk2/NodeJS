@@ -92,6 +92,18 @@ nvm use 20.11.1
   ```
   pnpm start
   ```
-### 
+### Add PNPM and NX to existing NPM Angular project
+Go to the project folder
+- Remove node_modules folder
+- [Optional] Create pnpm-workspace.yaml if you use workspaces
+- Execute the following command to convert the project from NPM to PNPM
+  ```
+  pnpm import
+  ```
+- Remove package-lock.json
+- Install dependencies executing the following command
+  ```
+  pnpm install
+  ```
 
 
