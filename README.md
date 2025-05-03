@@ -120,5 +120,9 @@ Go to the project folder
   pnpx nx serve
   ```
 
+## Change extensions and user-data path in VSCode
+Set the following Environment properties extensions and user-data respectively
+- VSCODE_EXTENSIONS
+- VSCODE_APPDATA
 
 
