@@ -66,6 +66,7 @@ nvm use 20.11.1
     ```
 
 ### Create an Angular project using NX and PNPM
+#### Install and configure PNPM
 - Install PNPM following the steps given below if PNPM is not
 - - Install PNPM on Windows via PowerShell
     ```
@@ -80,7 +81,16 @@ nvm use 20.11.1
     npm install -g pnpm
     ```
 
-- Execute the following command to create an NX Angular workspace using PNPM.\
+- Set the following environment variables to change the default directories
+  ```
+  XDG_CACHE_HOME
+  XDG_CONFIG_HOME
+  XDG_DATA_HOME
+  XDG_STATE_HOME
+  ```
+
+#### Create Angular workspace
+- Execute the following command to create an NX Angular workspace using PNPM.
   ```
   pnpx create-nx-workspace@<version> angularMicroUiWorkspace
   ```
@@ -96,7 +106,7 @@ nvm use 20.11.1
   ```
   pnpm start
   ```
-### Add PNPM and NX to existing NPM Angular project
+### Add PNPM and NX to the existing NPM Angular project
 #### Converting NPM project to PNPM project
 Go to the project folder
 - Remove node_modules folder
@@ -110,12 +120,12 @@ Go to the project folder
   ```
   pnpm install
   ```
-#### Add NX to project
+#### Add NX to the project
 - Execute the following command to add NX
   ```
   pnpx nx@latest init
   ```
-- Execute following command to start the project
+- Execute the following command to start the project
   ```
   pnpx nx serve
   ```
