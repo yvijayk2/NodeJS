@@ -83,6 +83,7 @@ nvm use 20.11.1
 
 - Set the following environment variables to change the default directories
   ```
+  PNPM_HOME
   XDG_CACHE_HOME
   XDG_CONFIG_HOME
   XDG_DATA_HOME
