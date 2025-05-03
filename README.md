@@ -11,11 +11,13 @@ https://github.com/nvm-sh/nvm
 nvm list
 ```
 ##### Sample output
-* 23.9.0 (Currently using 64-bit executable)\
-20.11.1\
-20.5.0\
-18.17.0\
-18.13.0\
+```
+* 23.9.0 (Currently using 64-bit executable)
+20.11.1
+20.5.0
+18.17.0
+18.13.0
+```
   
 #### To use a Node version (20.11.1)
 ```
@@ -68,15 +70,15 @@ nvm use 20.11.1
 ### Create an Angular project using NX and PNPM
 #### Install and configure PNPM
 - Install PNPM following the steps given below if PNPM is not
-- - Install PNPM on Windows via PowerShell
+  - Install PNPM on Windows via PowerShell
     ```
     Invoke-WebRequest https://get.pnpm.io/install.ps1 -UseBasicParsing | Invoke-Expression
     ```
-- - Install PNPM on Unix
+  - Install PNPM on Unix
     ```
     curl -fsSL https://get.pnpm.io/install.sh | sh -
     ```
-- - Install PNPM using NPM
+  - Install PNPM using NPM
     ```
     npm install -g pnpm
     ```
@@ -91,6 +93,16 @@ nvm use 20.11.1
   ```
 
 - Manage environments
+  - To install a node version use the following syntax
+  pnpm env use -g <version>
+  example:
+  ```
+  pnpm env use -g lts
+  ```
+  - Command to list installed Node version
+  ```
+  pnpm env list
+  ```
 
 #### Create Angular workspace
 - Execute the following command to create an NX Angular workspace using PNPM.
@@ -101,8 +113,8 @@ nvm use 20.11.1
   ```
   npx create-nx-workspace@<version> angularMicroUiWorkspace --package-manager=pnpm
   ```
-- - Refer to the Angular and NX version matrix to use the proper NX version to install the required Angular CLI
-- - - Angular and NX version matrix
+  - Refer to the Angular and NX version matrix to use the proper NX version to install the required Angular CLI
+    - Angular and NX version matrix
   https://nx.dev/nx-api/angular/documents/angular-nx-version-matrix
 
 - Execute the following command to start the project
@@ -134,8 +146,10 @@ Go to the project folder
   ```
 
 ## Change extensions and user-data path in VSCode
-Set the following Environment properties extensions and user-data respectively
-- VSCODE_EXTENSIONS
-- VSCODE_APPDATA
+- Set the following Environment properties extensions and user-data respectively
+```
+VSCODE_EXTENSIONS
+VSCODE_APPDATA
+```
 
 
