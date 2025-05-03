@@ -89,6 +89,8 @@ nvm use 20.11.1
   XDG_STATE_HOME
   ```
 
+- Manage environments
+
 #### Create Angular workspace
 - Execute the following command to create an NX Angular workspace using PNPM.
   ```
