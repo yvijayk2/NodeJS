@@ -91,6 +91,10 @@ nvm use 20.11.1
   XDG_DATA_HOME
   XDG_STATE_HOME
   ```
+- Use the following command to change the store location of PNPM
+  ```
+  pnpm config set store-dir D:\installed\pnpm\store
+  ```
 
 - Manage environments
   - To install a node version use the following syntax
