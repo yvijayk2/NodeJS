@@ -97,23 +97,23 @@ nvm use 20.11.1
   ```
 
 - Manage environments
-  - To install a node version use the following syntax
+  - To install a node version, use the following syntax
   pnpm env use -g <version>
   example:
   ```
   pnpm env use -g lts
   ```
-  - Command to list installed Node version
+  - Command to list the installed Node version
   ```
   pnpm env list
   ```
 
-#### Create Angular workspace
+#### Create an Angular workspace
 - Execute the following command to create an NX Angular workspace using PNPM.
   ```
   pnpx create-nx-workspace@<version> angularMicroUiWorkspace
   ```
-  or use the following NPM command to create NX Angular
+  Or use the following NPM command to create NX Angular
   ```
   npx create-nx-workspace@<version> angularMicroUiWorkspace --package-manager=pnpm
   ```
