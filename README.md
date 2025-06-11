@@ -150,10 +150,19 @@ Go to the project folder
   ```
 
 ## Change extensions and user-data path in VSCode
-- Set the following Environment properties extensions and user-data respectively
+- Set the following Environment properties, extensions and user-data respectively
 ```
 VSCODE_EXTENSIONS
 VSCODE_APPDATA
 ```
 
+## Tips
+- When you get "Reached heap limit Allocation failed - JavaScript heap out of memory" error message in node js application, then run the following command
+```
+export NODE_OPTIONS="--max-old-space-size=4096"
+```
+or the following in Windows
+```
+set NODE_OPTIONS="--max-old-space-size=4096"
+```
 
