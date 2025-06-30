@@ -175,5 +175,11 @@ npx nx@latest init
 ```
 npx nx g convert-to-rspack
 ```
-
+- If needed, add the following packages
+```
+npm add -D @types/node
+```
+```
+npm add @babel/runtime
+```
 
