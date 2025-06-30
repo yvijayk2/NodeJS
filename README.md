@@ -166,3 +166,14 @@ or the following in Windows
 set NODE_OPTIONS="--max-old-space-size=4096"
 ```
 
+# Migrate Angular with Webpack to Rspack
+- Initialise NX
+```
+npx nx@latest init
+```
+- Run Rspack conversion generator
+```
+npx nx g convert-to-rspack
+```
+
+
