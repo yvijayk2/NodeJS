@@ -169,11 +169,11 @@ set NODE_OPTIONS="--max-old-space-size=4096"
 # Migrate Angular with Webpack to Rspack
 - Initialise Nx
 ```
-npx nx@latest init
+npx nx migrate latest
 ```
 - Run Rspack conversion generator
 ```
-npx nx g convert-to-rspack
+npx nx g @nx/angular:convert-to-rspack
 ```
 - If needed, add the following packages
 ```
