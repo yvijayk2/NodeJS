@@ -167,7 +167,7 @@ set NODE_OPTIONS="--max-old-space-size=4096"
 ```
 
 # Migrate Angular with Webpack to Rspack
-- Initialise NX
+- Initialise Nx
 ```
 npx nx@latest init
 ```
@@ -182,4 +182,13 @@ npm add -D @types/node
 ```
 npm add @babel/runtime
 ```
-
+- Run the application
+```
+npx nx build yourProjectName
+npx nx serve yourProjectName
+```
+Or if package.json is updated with Nx scripts, then run the following commands to build and serve
+```
+npm run build
+npm run start
+```
