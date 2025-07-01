@@ -171,6 +171,10 @@ set NODE_OPTIONS="--max-old-space-size=4096"
 ```
 npx nx migrate latest
 ```
+or
+```
+pnpx nx@latest init
+```
 - Run Rspack conversion generator
 ```
 npx nx g @nx/angular:convert-to-rspack
