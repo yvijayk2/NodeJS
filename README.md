@@ -157,7 +157,7 @@ VSCODE_APPDATA
 ```
 
 ## Tips
-- When you get "Reached heap limit Allocation failed - JavaScript heap out of memory" error message in node js application, then run the following command
+- When you get the "Reached heap limit Allocation failed - JavaScript heap out of memory" error message in node js application, then run the following command
 ```
 export NODE_OPTIONS="--max-old-space-size=4096"
 ```
@@ -167,24 +167,37 @@ set NODE_OPTIONS="--max-old-space-size=4096"
 ```
 
 # Migrate Angular with Webpack to Rspack
+#### Note: Follow the steps given in the above section "Converting NPM project to PNPM project" to use PNPM
 - Initialise Nx
 ```
 npx nx migrate latest
 ```
 or
 ```
-pnpx nx@latest init
+pnpx nx migrate latest
 ```
 - Run Rspack conversion generator
 ```
 npx nx g @nx/angular:convert-to-rspack
 ```
+or
+```
+pnpx nx g @nx/angular:convert-to-rspack
+```
 - If needed, add the following packages
 ```
 npm add -D @types/node
 ```
+or
+```
+pnpm add -D @types/node
+```
 ```
 npm add @babel/runtime
+```
+or
+```
+pnpm add @babel/runtime
 ```
 - Run the application
 ```
